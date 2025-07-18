@@ -30,3 +30,15 @@ const myFunction = function(){
 }
 
 
+// ==============================
+
+// Stack(Primitive), Heap(Non Premitive) (Memory)
+
+let myName = "Hello" // when primitive gose in stack it gives copy of the variable
+
+let objOne = {            // It is non primitive datatype it gose in Heap, and give original reference
+  userName: "sfwehgo@",
+  upi: "user@ypl"
+}
+
+
