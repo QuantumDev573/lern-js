@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>events</title>
+</head>
+<body>
+  <h1>cahi aur code</h1>
+  <button id="stop">stop</button>
+  <button id="start">start</button>
+</body>
+<script>
+  
+  
+  
+  let dateInterval;
+  const display = document.querySelector('h1')
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(dateInterval)
+  })
+  
+  document.querySelector('#start').addEventListener('click', function(){
+    dateInterval = setInterval(function(){
+    const date = Date.now();
+    display.innerHTML = date
+  }, 1000)
+  })
+  
+ 
+  
+
+</script>
+</html>
+
