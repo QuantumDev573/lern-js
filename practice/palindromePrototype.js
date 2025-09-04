@@ -1,5 +1,5 @@
 
-Object.prototype.checkPalindrom = function(){
+String.prototype.checkPalindrom = function(){
   let newstring = '';
   for(let i = (this.length-1); i>=0; i--){
   newstring += this[i];
